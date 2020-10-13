@@ -1,5 +1,9 @@
 # Cycle
 
+<!-- So is a cycle basically a "ring buffer" kind of structure? If so, maybe this should be mentioned
+     and some more explanation should be provided.
+ --> 
+
 [[Source](https://github.com/apple/swift-algorithms/blob/main/Sources/Algorithms/Cycle.swift) | 
  [Tests](https://github.com/apple/swift-algorithms/blob/main/Tests/SwiftAlgorithmsTests/CycleTests.swift)]
 
@@ -31,6 +35,8 @@ extension Collection {
     func cycled(times: Int) -> FlattenSequence<Repeated<Self>>
 }
 ```
+
+
 
 The new `Cycle` type is a sequence only, given that the `Collection` protocol
 design makes infinitely large types impossible/impractical. Note that despite
